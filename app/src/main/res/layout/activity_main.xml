@@ -3,7 +3,7 @@
     <data>
         <variable
             name="viewModel"
-            type="pl.pszklarska.livedatabinding.viewmodel.MainViewModel" />
+            type="pl.pszklarska.livedatabinding.viewmodel.MainVM" />
     </data>
 
     <LinearLayout
@@ -19,6 +19,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{Integer.toString(viewModel.kittyAge)}" />
+            android:text="@{``+viewModel.kittyAge}" />
     </LinearLayout>
 </layout>
