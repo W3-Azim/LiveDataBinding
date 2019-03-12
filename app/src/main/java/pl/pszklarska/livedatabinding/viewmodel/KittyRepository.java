@@ -33,7 +33,7 @@ public class KittyRepository {
     private final long period;
 
     public KittyRepository() {
-        this.period = TimeUnit.SECONDS.toMillis(1L);
+        this.period = TimeUnit.SECONDS.toMillis(5L);
     }
 
     public void receiveNewKitties(final MainVM mainVM) {
@@ -42,9 +42,8 @@ public class KittyRepository {
             @Override
             public void run() {
                 int name = random.nextInt(KittyNames.values().length);
-                int age = random.nextInt(5);
 
-                mainVM.update(new Kitty(KittyNames.values()[name].name(), age));
+                mainVM.update(new Kitty(KittyNames.values()[name].name(), name * 10));
             }
         }, period, period);
 
