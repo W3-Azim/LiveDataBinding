@@ -1,4 +1,6 @@
-# LiveDataBinding
+# LiveDataBinding [Java]
+[NOTE] updated forked repo to Java for those who prefer Java over Kotlin
+
 Example showing how to use LiveData with Data Binding by using support introduced in [Android Studio 3.1 Canary 6](https://androidstudio.googleblog.com/2017/12/android-studio-31-canary-6-is-now.html).
 You can read more here in my blogpost: [Architecture Components: How to use LiveData with Data Binding?](https://medium.com/@pszklarska/android-architecture-components-livedata-with-data-binding-7bf85871bbd8)
 
