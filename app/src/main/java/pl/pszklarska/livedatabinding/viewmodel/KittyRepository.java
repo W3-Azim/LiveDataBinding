@@ -45,7 +45,7 @@ public class KittyRepository {
 
                 mainVM.update(new Kitty(KittyNames.values()[name].name(), name * 10));
             }
-        }, period, period);
+        }, 0, period);
 
     }
 }
